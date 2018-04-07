@@ -20,5 +20,5 @@
 
 ### Usage:
 
-`$python trimming.py [-h] [-in str] [-out str] [-slide_window int] [-right_end int] [-left_end int] [-quality_threshold int]`
+`$ python trimming.py [-h] [-in str] [-out str] [-slide_window int] [-right_end int] [-left_end int] [-quality_threshold int]`
 
