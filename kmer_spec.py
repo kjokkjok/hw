@@ -58,7 +58,7 @@ class Kmer():
         print(round(self. genome_size))
         
 data = Kmer()
-data.fq_parse('Загрузки/test_kmer.fastq', 10, 30)
+data.fq_parse('downloads/test_kmer.fastq', 10, 30)
 data.to_array(data.kmer_dict)
 data.viz_distr(data.plot_data, 4000, 200, 40, 5)
 data.genome_length()
