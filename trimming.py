@@ -26,9 +26,22 @@ with open(args.output_file, 'w') as out:
       
         for index in range(len(seq.seq)-args.integer1+1):
             
+<<<<<<< HEAD
             if sum(seq.letter_annotations['phred_quality'][index:(index + args.integer1)])/len(seq.letter_annotations['phred_quality'][index:(index + args.integer1)]) < args.integer4:
                 SeqIO.write(seq[0:index], out, 'fastq')
     		break	        
        	    break
 	SeqIO.write(seq, out, 'fastq')
 
+=======
+            if (sum(seq.letter_annotations['phred_quality'][index:(index + args.integer1)])/len(seq.letter_annotations['phre$
+
+                SeqIO.write(seq[0:index], out, 'fastq')
+
+                break           
+
+            else:
+                continue
+            if index == len(seq.seq)-args.integer1+1:
+                SeqIO.write(seq, out, 'fastq')
+>>>>>>> 6427bc782b5b88722283285b3ea35f845f501f90
